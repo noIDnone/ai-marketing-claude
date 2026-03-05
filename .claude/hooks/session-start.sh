@@ -16,9 +16,9 @@ echo "==> Setting up AI Marketing Suite..."
 # Install Python dependencies
 echo "==> Installing Python dependencies..."
 if command -v pip3 &>/dev/null; then
-  pip3 install --quiet reportlab>=4.0
+  pip3 install --quiet "reportlab>=4.0"
 elif command -v pip &>/dev/null; then
-  pip install --quiet reportlab>=4.0
+  pip install --quiet "reportlab>=4.0"
 else
   echo "WARNING: pip not found — skipping Python dependency install"
 fi
